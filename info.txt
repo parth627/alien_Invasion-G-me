@@ -1,0 +1,24 @@
+->When choosing artwork for your games, be sure to pay attention to
+licensing. The safest and cheapest way to start is to use freely licensed
+graphics that you can modify from a website like http://pixabay.com/.
+
+->You can use almost any type of image file in your game, but it’s easiest
+if you use a bitmap (.bmp) file because Pygame loads bitmaps by default. 
+
+->(Most images you’ll find are in .jpg, .png, or .gif formats, but you can convert
+them to bitmaps using tools like Photoshop, GIMP, and Paint.)
+
+->SHIP.PY:
+-Once the image is loaded, we use get_rect() to access the surface’s rect
+attribute. One reason Pygame is so efficient is that it lets you treat game
+elements like rectangles (rects), even if they’re not exactly shaped like rectangles.
+
+-When you’re centering a game element, work with the center, centerx, or
+centery attributes of a rect. When you’re working at an edge of the screen,
+work with the top, bottom, left, or right attributes. When you’re adjusting
+the horizontal or vertical placement of the rect, you can just use the x and
+y attributes, which are the x- and y-coordinates of its top-left corner.
+
+-In Pygame, the origin (0, 0) is at the top-left corner of the screen, and coordinates
+increase as you go down and to the right. On a 1200 by 800 screen, the origin is at
+the top-left corner, and the bottom-right corner has the coordinates (1200, 800).
